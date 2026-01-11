@@ -4,11 +4,11 @@ import css from "./NotesPage.module.css";
 import { useDebounce } from "use-debounce";
 import { fetchNotes } from "../../lib/api";
 import { useQuery } from "@tanstack/react-query";
-import SearchBox from "../../сomponents/SearchBox/SearchBox";
-import Pagination from "../../сomponents/Pagination/Pagination";
-import NoteList from "../../сomponents/NoteList/NoteList";
-import Modal from "../../сomponents/Modal/Modal";
-import NoteForm from "../../сomponents/NoteForm/NoteForm";
+import SearchBox from "../../components/SearchBox/SearchBox";
+import Pagination from "../../components/Pagination/Pagination";
+import NoteList from "../../components/NoteList/NoteList";
+import Modal from "../../components/Modal/Modal";
+import NoteForm from "../../components/NoteForm/NoteForm";
 
 
 const PER_PAGE = 12;
