@@ -7,11 +7,11 @@ import {
 import NoteDetailsClient from "./NoteDetails.client";
 
 type Props = {
-  params: { id: string };
+  params: Promise<{ id: string }>;
 };
 
-export default async function NoteDetails ({ params }: Props) {
-  const { id } = params;
+export default async function NoteDetails({ params }: Props) {
+  const { id } = await params;
   const queryClient = new QueryClient();
 
   await queryClient.prefetchQuery({

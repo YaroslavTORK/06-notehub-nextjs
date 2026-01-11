@@ -2,7 +2,7 @@
 import { useState } from "react";
 import css from "./NotesPage.module.css";
 import { useDebounce } from "use-debounce";
-import { fetchNotes } from "../../lib/api";
+import { fetchNotes } from "@/lib/api";
 import { useQuery } from "@tanstack/react-query";
 import SearchBox from "../../components/SearchBox/SearchBox";
 import Pagination from "../../components/Pagination/Pagination";
@@ -13,7 +13,7 @@ import NoteForm from "../../components/NoteForm/NoteForm";
 
 const PER_PAGE = 12;
 
-export default function App() {
+export default function NotesClient() {
   const [page, setPage] = useState(1);
   const [searchText, setSearchText] = useState("");
   const [isModalOpen, setIsModalOpen] = useState(false);
